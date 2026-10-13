@@ -1,0 +1,406 @@
+/* =========================
+   GENERAL SETTINGS
+========================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+:root {
+    --primary-color: #ff6b35;
+    --muted-color: #b5b5b5;
+    --card-color: #1e1e1e;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.menu-navbar {
+    padding: 18px 0;
+    background-color: #181818;
+    border-bottom: 1px solid #303030;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.menu-logo {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.menu-logo span {
+    color: var(--primary-color);
+}
+
+.menu-logo:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.back-home-button {
+    display: inline-block;
+    padding: 10px 16px;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.back-home-button i {
+    margin-right: 5px;
+}
+
+.back-home-button:hover {
+    color: #ffffff;
+    background-color: #e85d2a;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOD MENU SECTION
+========================= */
+
+.food-menu-section {
+    padding: 70px 0 80px;
+    background-color: #121212;
+}
+
+.menu-section-heading {
+    margin-bottom: 35px;
+}
+
+.menu-subtitle {
+    margin-bottom: 12px;
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.menu-section-heading h1 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.menu-section-heading h1 span {
+    color: var(--primary-color);
+}
+
+.menu-section-heading > p:last-child {
+    color: var(--muted-color);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CATEGORY FILTERS
+========================= */
+
+.menu-filters {
+    margin-bottom: 40px;
+}
+
+.filter-button {
+    margin: 5px;
+    padding: 10px 20px;
+    color: #d5d5d5;
+    background-color: #1e1e1e;
+    border: 1px solid #383838;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.filter-button:hover,
+.filter-button.active {
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.filter-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOD CARDS
+========================= */
+
+.food-item {
+    margin-bottom: 30px;
+}
+
+.menu-food-card {
+    height: 100%;
+    overflow: hidden;
+    background-color: var(--card-color);
+    border: 1px solid #303030;
+    border-radius: 15px;
+    transition: transform 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.menu-food-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary-color);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================
+   FOOD IMAGES
+========================= */
+
+.menu-food-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-food-image img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.menu-food-card:hover .menu-food-image img {
+    transform: scale(1.05);
+}
+
+.food-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 6px 12px;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   FOOD CONTENT
+========================= */
+
+.menu-food-content {
+    display: flex;
+    flex-direction: column;
+    padding: 22px 20px;
+}
+
+.food-title-price {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.food-title-price h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.food-price {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.menu-food-content > p {
+    min-height: 44px;
+    margin-bottom: 20px;
+    color: var(--muted-color);
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   RATING AND ORDER BUTTON
+========================= */
+
+.food-card-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid #383838;
+}
+
+.food-rating {
+    color: #ffb547;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.food-rating i {
+    margin-right: 4px;
+}
+
+.food-order-button {
+    display: inline-block;
+    padding: 9px 14px;
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.food-order-button:hover {
+    color: #ffffff;
+    background-color: #e85d2a;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.menu-footer {
+    padding: 35px 0 20px;
+    background-color: #181818;
+    border-top: 1px solid #303030;
+}
+
+.menu-footer .menu-logo {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.menu-footer p {
+    color: var(--muted-color);
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.menu-footer .copyright-text {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-top: 15px;
+    border-top: 1px solid #303030;
+    font-size: 11px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 767px) {
+
+    .food-menu-section {
+        padding: 50px 0 60px;
+    }
+
+    .menu-section-heading h1 {
+        font-size: 28px;
+    }
+
+    .menu-section-heading > p:last-child {
+        font-size: 13px;
+    }
+
+    .menu-filters {
+        margin-bottom: 30px;
+    }
+
+    .filter-button {
+        margin: 4px 2px;
+        padding: 9px 15px;
+        font-size: 12px;
+    }
+
+    .menu-food-image img {
+        height: 220px;
+    }
+
+    .menu-food-content {
+        padding: 20px 16px;
+    }
+
+    .menu-logo {
+        font-size: 21px;
+    }
+
+    .back-home-button {
+        padding: 9px 12px;
+        font-size: 11px;
+    }
+
+}
+
+
+@media (max-width: 380px) {
+
+    .navbar-content {
+        gap: 8px;
+    }
+
+    .menu-logo {
+        font-size: 19px;
+    }
+
+    .back-home-button {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+
+    .menu-section-heading h1 {
+        font-size: 25px;
+    }
+
+    .food-title-price h2 {
+        font-size: 15px;
+    }
+
+    .food-price {
+        font-size: 14px;
+    }
+
+}

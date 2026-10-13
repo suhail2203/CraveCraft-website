@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CraveCraft | Good Food, Great Mood</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand brand-logo" href="#home">
+                Crave<span>Craft.</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <div class="navbar-nav ml-auto align-items-lg-center">
+
+                    <a class="nav-link" href="#home">Home</a>
+
+                    <a class="nav-link" href="#menu">Our Menu</a>
+
+                    <a class="nav-link" href="#about-us">About Us</a>
+
+                    <a class="nav-link" href="#contact">Contact</a>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Hero Content -->
+                <div class="col-12 col-lg-6 hero-content">
+
+                    <p class="hero-label">
+                        ✦ FRESH FLAVOURS, UNFORGETTABLE MOMENTS
+                    </p>
+
+                    <h1 class="hero-heading">
+                        Good Food.<br />
+                        <span>Great Mood.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Discover delicious dishes crafted with fresh ingredients
+                        and unforgettable flavours. Your next favourite meal
+                        is waiting for you.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="menu.html" class="btn primary-button">
+                            Explore Menu <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a href="about.html" class="btn secondary-button">
+                            Discover More
+                        </a>
+                    </div>
+
+                    <div class="hero-highlights">
+                        <div>
+                            <h3>Fresh</h3>
+                            <p>Quality Ingredients</p>
+                        </div>
+
+                        <div>
+                            <h3>Delicious</h3>
+                            <p>Made With Love</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Hero Image -->
+                <div class="col-12 col-lg-6 hero-image-column">
+
+                    <div class="hero-image-wrapper">
+
+                        <div class="hero-image-glow"></div>
+
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=85" alt="Delicious freshly prepared pizza" class="hero-image" />
+
+                        <div class="floating-badge">
+                            <span class="badge-icon">✦</span>
+                            <div>
+                                <h4>Made Fresh</h4>
+                                <p>Served With Love</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Dishes Section -->
+    <section class="popular-dishes-section" id="menu">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="section-heading text-center">
+                <p class="section-label">OUR SPECIAL MENU</p>
+
+                <h2 class="section-title">
+                    Popular <span>Dishes</span>
+                </h2>
+
+                <p class="section-description">
+                    Discover our most-loved dishes, prepared fresh
+                    and served with unforgettable flavours.
+                </p>
+            </div>
+
+            <!-- Food Cards -->
+            <div class="row">
+
+                <!-- Food Card 1 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="food-card">
+
+                        <div class="food-image-container">
+                            <span class="food-badge">BESTSELLER</span>
+
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Classic beef burger with fresh toppings" class="food-image" loading="lazy" />
+                        </div>
+
+                        <div class="food-card-content">
+
+                            <div class="food-rating">
+                                <span>★ 4.8</span>
+                                <span class="rating-text">(120+ reviews)</span>
+                            </div>
+
+                            <h3 class="food-name">Classic Burger</h3>
+
+                            <p class="food-description">
+                                Juicy grilled burger with fresh vegetables
+                                and our signature sauce.
+                            </p>
+
+                            <div class="food-card-footer">
+                                <span class="food-price">₹199</span>
+
+                                <a href="#contact" class="add-order-button" aria-label="Order Classic Burger">
+                                    +
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Card 2 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="food-card">
+
+                        <div class="food-image-container">
+                            <span class="food-badge">POPULAR</span>
+
+                            <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=600&q=80" alt="Freshly baked pizza topped with cheese" class="food-image" loading="lazy" />
+                        </div>
+
+                        <div class="food-card-content">
+
+                            <div class="food-rating">
+                                <span>★ 4.9</span>
+                                <span class="rating-text">(150+ reviews)</span>
+                            </div>
+
+                            <h3 class="food-name">Italian Pizza</h3>
+
+                            <p class="food-description">
+                                Crispy crust topped with rich cheese,
+                                herbs and delicious toppings.
+                            </p>
+
+                            <div class="food-card-footer">
+                                <span class="food-price">₹249</span>
+
+                                <a href="#contact" class="add-order-button" aria-label="Order Italian Pizza">
+                                    +
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Card 3 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="food-card">
+
+                        <div class="food-image-container">
+                            <span class="food-badge">CHEF'S PICK</span>
+
+                            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=600&q=80" alt="Creamy pasta garnished with fresh herbs" class="food-image" loading="lazy" />
+                        </div>
+
+                        <div class="food-card-content">
+
+                            <div class="food-rating">
+                                <span>★ 4.7</span>
+                                <span class="rating-text">(95+ reviews)</span>
+                            </div>
+
+                            <h3 class="food-name">Creamy Pasta</h3>
+
+                            <p class="food-description">
+                                Delicious pasta tossed in a creamy sauce
+                                with aromatic herbs.
+                            </p>
+
+                            <div class="food-card-footer">
+                                <span class="food-price">₹229</span>
+
+                                <a href="#contact" class="add-order-button" aria-label="Order Creamy Pasta">
+                                    +
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Card 4 -->
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="food-card">
+
+                        <div class="food-image-container">
+                            <span class="food-badge">MUST TRY</span>
+
+                            <img src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=600&q=80" alt="Grilled chicken served with fresh herbs" class="food-image" loading="lazy" />
+                        </div>
+
+                        <div class="food-card-content">
+
+                            <div class="food-rating">
+                                <span>★ 4.8</span>
+                                <span class="rating-text">(110+ reviews)</span>
+                            </div>
+
+                            <h3 class="food-name">Grilled Chicken</h3>
+
+                            <p class="food-description">
+                                Tender grilled chicken seasoned with
+                                aromatic spices and herbs.
+                            </p>
+
+                            <div class="food-card-footer">
+                                <span class="food-price">₹299</span>
+
+                                <a href="#contact" class="add-order-button" aria-label="Order Grilled Chicken">
+                                    +
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="special-offers-section" id="offers">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Offer Content -->
+                <div class="col-12 col-lg-6">
+                    <div class="offer-content">
+
+                        <span class="offer-label">
+                            🔥 LIMITED-TIME SPECIAL
+                        </span>
+
+                        <h2 class="offer-heading">
+                            A Little More Flavor,<br />
+                            <span>A Lot More Savings!</span>
+                        </h2>
+
+                        <p class="offer-description">
+                            Discover your favourite flavours and make every
+                            meal special. Enjoy our exclusive weekend offer
+                            on selected delicious dishes.
+                        </p>
+
+                        <div class="offer-discount">
+                            <span class="discount-number">20%</span>
+
+                            <div class="discount-details">
+                                <h3>OFF</h3>
+                                <p>Weekend Special</p>
+                            </div>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="btn offer-button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#offerMenuModal"
+                        >
+                            Explore Our Menu <span aria-hidden="true">→</span>
+                        </button>
+
+                        <p class="offer-note">
+                            *Demo promotion for selected menu items.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Offer Image -->
+                <div class="col-12 col-lg-6">
+                    <div class="offer-image-wrapper">
+
+                        <div class="offer-glow"></div>
+
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85" alt="Freshly prepared pizza with delicious toppings" class="offer-image" loading="lazy" />
+
+                        <div class="offer-floating-badge">
+                            <span>✦</span>
+                            <div>
+                                <h4>Made With Love</h4>
+                                <p>Freshness in Every Bite</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Modal -->
+    <div
+            class="modal fade"
+            id="offerMenuModal"
+            tabindex="-1"
+            aria-labelledby="offerMenuModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+
+                <div class="modal-content offer-modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header offer-modal-header">
+
+                        <h5 class="modal-title" id="offerMenuModalLabel">
+                            🔥 CraveCraft Special Offer
+                        </h5>
+
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+
+                    </div>
+
+                    <!-- Modal Body -->
+                    <div class="modal-body offer-modal-body">
+
+                        <div class="offer-modal-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+
+                        <p class="offer-modal-label">
+                            LIMITED-TIME SPECIAL
+                        </p>
+
+                        <h3>
+                            A Little More Flavor,<br>
+                            <span>A Lot More Savings!</span>
+                        </h3>
+
+                        <div class="modal-discount">
+                            <span>20%</span>
+                            <div>
+                                <h4>OFF</h4>
+                                <p>Weekend Special</p>
+                            </div>
+                        </div>
+
+                        <p class="offer-modal-description">
+                            Discover delicious dishes and explore our menu
+                            to find your next favourite meal!
+                        </p>
+
+                        <p class="offer-modal-note">
+                            *Demo promotion for selected menu items.
+                        </p>
+
+                    </div>
+
+                    <!-- Modal Footer -->
+                    <div class="modal-footer offer-modal-footer">
+
+                        <button
+                            type="button"
+                            class="btn modal-close-button"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+
+                        <a href="menu.html" class="btn modal-menu-button">
+                            View Menu <span aria-hidden="true">→</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section" id="why-choose-us">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="section-heading text-center">
+                <span class="section-subtitle">WHY CRAVECRAFT?</span>
+
+                <h2 class="why-choose-heading">
+                    More Than Food, <span>It's an Experience.</span>
+                </h2>
+
+                <p class="why-choose-description">
+                    We bring together fresh ingredients, passionate chefs,
+                    and exceptional service to make every meal memorable.
+                </p>
+            </div>
+
+            <!-- Feature Cards -->
+            <div class="row">
+
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="feature-card">
+
+                        <div class="feature-icon icon-fresh">
+                            <span aria-hidden="true">🥬</span>
+                        </div>
+
+                        <h3 class="feature-title">Fresh Ingredients</h3>
+
+                        <p class="feature-description">
+                            We carefully select quality ingredients to bring
+                            freshness, flavour, and goodness to every dish.
+                        </p>
+
+                        <span class="feature-number">01</span>
+
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="feature-card">
+
+                        <div class="feature-icon icon-chef">
+                            <span aria-hidden="true">👨‍🍳</span>
+                        </div>
+
+                        <h3 class="feature-title">Expert Chefs</h3>
+
+                        <p class="feature-description">
+                            Our dishes are thoughtfully prepared with creativity,
+                            passion, and attention to every little detail.
+                        </p>
+
+                        <span class="feature-number">02</span>
+
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="feature-card">
+
+                        <div class="feature-icon icon-delivery">
+                            <span aria-hidden="true">🚀</span>
+                        </div>
+
+                        <h3 class="feature-title">Fast Delivery</h3>
+
+                        <p class="feature-description">
+                            Enjoy your favourite meals with a convenient
+                            ordering experience designed around your needs.
+                        </p>
+
+                        <span class="feature-number">03</span>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Highlight -->
+            <div class="why-choose-bottom">
+                <span class="highlight-star" aria-hidden="true">✦</span>
+
+                <p>
+                    Great food starts with great care.
+                    <span>That's the CraveCraft promise.</span>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about-us">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- About Image -->
+                <div class="col-12 col-lg-6">
+                    <div class="about-image-wrapper">
+
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=85" alt="Restaurant interior with a welcoming dining atmosphere" class="about-image" loading="lazy" />
+
+                        <div class="about-experience-badge">
+                            <span class="experience-number">100%</span>
+                            <span class="experience-text">Made With Love</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- About Content -->
+                <div class="col-12 col-lg-6">
+                    <div class="about-content">
+
+                        <span class="about-subtitle">OUR STORY</span>
+
+                        <h2 class="about-heading">
+                            Good Food.
+                            <span>Great Memories.</span>
+                        </h2>
+
+                        <p class="about-description">
+                            At CraveCraft, we believe great food brings people
+                            together. Our goal is to create memorable dining
+                            experiences with delicious flavours, thoughtful
+                            preparation, and a welcoming atmosphere.
+                        </p>
+
+                        <p class="about-description">
+                            From casual meals with friends to special moments
+                            with family, we want every visit to feel special.
+                            Every dish is an opportunity to share our passion
+                            for good food.
+                        </p>
+
+                        <!-- Restaurant Highlights -->
+                        <div class="about-highlights">
+
+                            <div class="about-highlight-item">
+                                <span class="highlight-check">✓</span>
+                                <span>Quality Ingredients</span>
+                            </div>
+
+                            <div class="about-highlight-item">
+                                <span class="highlight-check">✓</span>
+                                <span>Passion for Flavour</span>
+                            </div>
+
+                            <div class="about-highlight-item">
+                                <span class="highlight-check">✓</span>
+                                <span>Customer-First Service</span>
+                            </div>
+
+                            <div class="about-highlight-item">
+                                <span class="highlight-check">✓</span>
+                                <span>Memorable Experiences</span>
+                            </div>
+
+                        </div>
+
+                        <a href="menu.html" class="btn about-button">
+                            Discover Our Menu →
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="reviews-heading text-center">
+
+                <span class="reviews-subtitle">CUSTOMER STORIES</span>
+
+                <h2 class="reviews-title">
+                    What Our Customers <span>Say.</span>
+                </h2>
+
+                <p class="reviews-description">
+                    Every meal tells a story. Here's what our customers
+                    have to say about their CraveCraft experience.
+                </p>
+
+            </div>
+
+            <!-- Review Cards -->
+            <div class="row">
+
+                <!-- Review Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="review-card">
+
+                        <span class="review-quote" aria-hidden="true">“</span>
+
+                        <div class="review-stars" aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </div>
+
+                        <h3 class="review-card-title">
+                            Delicious Food!
+                        </h3>
+
+                        <p class="review-message">
+                            The food looks amazing and the flavours are wonderful.
+                            I really love the menu presentation and the attention
+                            to detail in every dish.
+                        </p>
+
+                        <div class="review-divider"></div>
+
+                        <div class="review-customer">
+
+                            <div class="customer-avatar avatar-one" aria-hidden="true">
+                                A
+                            </div>
+
+                            <div class="customer-details">
+                                <h4>Arun Kumar</h4>
+                                <p>Food Lover</p>
+                            </div>
+
+                            <span class="verified-badge" title="Sample testimonial">
+                                ✦
+                            </span>
+
+                        </div>
+
+                    </article>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="review-card">
+
+                        <span class="review-quote" aria-hidden="true">“</span>
+
+                        <div class="review-stars" aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </div>
+
+                        <h3 class="review-card-title">
+                            Beautiful Experience!
+                        </h3>
+
+                        <p class="review-message">
+                            The restaurant design feels modern and welcoming.
+                            The combination of delicious food and a comfortable
+                            atmosphere makes this concept stand out.
+                        </p>
+
+                        <div class="review-divider"></div>
+
+                        <div class="review-customer">
+
+                            <div class="customer-avatar avatar-two" aria-hidden="true">
+                                P
+                            </div>
+
+                            <div class="customer-details">
+                                <h4>Priya Sharma</h4>
+                                <p>Dining Enthusiast</p>
+                            </div>
+
+                            <span class="verified-badge" title="Sample testimonial">
+                                ✦
+                            </span>
+
+                        </div>
+
+                    </article>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="review-card">
+
+                        <span class="review-quote" aria-hidden="true">“</span>
+
+                        <div class="review-stars" aria-label="5 out of 5 stars">
+                            ★★★★★
+                        </div>
+
+                        <h3 class="review-card-title">
+                            Great Attention to Detail!
+                        </h3>
+
+                        <p class="review-message">
+                            The menu is easy to explore and the food cards
+                            clearly show the dish details and prices. A clean
+                            and attractive restaurant website concept.
+                        </p>
+
+                        <div class="review-divider"></div>
+
+                        <div class="review-customer">
+
+                            <div class="customer-avatar avatar-three" aria-hidden="true">
+                                R
+                            </div>
+
+                            <div class="customer-details">
+                                <h4>Rahul Nair</h4>
+                                <p>Regular Food Explorer</p>
+                            </div>
+
+                            <span class="verified-badge" title="Sample testimonial">
+                                ✦
+                            </span>
+
+                        </div>
+
+                    </article>
+                </div>
+
+            </div>
+
+            <!-- Bottom Message -->
+            <div class="reviews-bottom text-center">
+                <p>
+                    Good food brings people together.
+                    <span>That's what we believe.</span>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section" id="contact">
+        <div class="container">
+            <div class="row">
+
+                <!-- Brand Information -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <a href="#home" class="footer-logo">
+                        Crave<span>Craft.</span>
+                    </a>
+
+                    <p class="footer-description">
+                        Fresh flavours, quality ingredients, and
+                        unforgettable dining experiences.
+                        Every meal is crafted with love.
+                    </p>
+
+                    <div class="footer-social-icons">
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-6 col-md-6 col-lg-2 mb-4">
+                    <h3 class="footer-heading">Quick Links</h3>
+
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Opening Hours -->
+                <div class="col-6 col-md-6 col-lg-3 mb-4">
+                    <h3 class="footer-heading">Opening Hours</h3>
+
+                    <ul class="footer-links">
+                        <li>Monday - Friday</li>
+                        <li>10:00 AM - 10:00 PM</li>
+                        <li>Saturday - Sunday</li>
+                        <li>10:00 AM - 11:00 PM</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4">
+                    <h3 class="footer-heading">Contact Us</h3>
+
+                    <p class="footer-contact">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Your City, Tamil Nadu, India</span>
+                    </p>
+
+                    <p class="footer-contact">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@cravecraft.com</span>
+                    </p>
+
+                    <p class="footer-contact">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+91 XXXXX XXXXX</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>
+                    © 2026 CraveCraft. All Rights Reserved.
+                </p>
+
+                <p>
+                    Made with <span class="heart">♥</span> for food lovers.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="https://d2clawv67efefq.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>

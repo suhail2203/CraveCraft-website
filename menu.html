@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Menu | CraveCraft</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Main Website CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Menu Page CSS -->
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="menu-navbar">
+        <div class="container navbar-content">
+
+            <a href="index.html" class="menu-logo">
+                Crave<span>Craft</span>
+            </a>
+
+            <a href="index.html" class="back-home-button">
+                <i class="fas fa-arrow-left"></i>
+                Back to Home
+            </a>
+
+        </div>
+    </nav>
+
+
+    <!-- FOOD MENU SECTION -->
+    <section class="food-menu-section" id="food-menu">
+
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="menu-section-heading text-center">
+
+                <p class="menu-subtitle">
+                    OUR SPECIALITIES
+                </p>
+
+                <h1>
+                    Choose Your <span>Favourite</span>
+                </h1>
+
+                <p>
+                    Explore our selection of delicious dishes.
+                </p>
+
+            </div>
+
+
+            <!-- CATEGORY BUTTONS -->
+            <div class="menu-filters text-center">
+
+                <button
+                    class="filter-button active"
+                    type="button"
+                    data-category="all">
+                    All
+                </button>
+
+                <button
+                    class="filter-button"
+                    type="button"
+                    data-category="starters">
+                    Starters
+                </button>
+
+                <button
+                    class="filter-button"
+                    type="button"
+                    data-category="pizza">
+                    Pizza
+                </button>
+
+                <button
+                    class="filter-button"
+                    type="button"
+                    data-category="burgers">
+                    Burgers
+                </button>
+
+                <button
+                    class="filter-button"
+                    type="button"
+                    data-category="desserts">
+                    Desserts
+                </button>
+
+            </div>
+
+
+            <!-- FOOD CARDS -->
+            <div class="row" id="foodCards">
+
+                <!-- FOOD CARD 1: STARTER -->
+                <div
+                    class="col-12 col-md-6 col-lg-4 food-item"
+                    data-category="starters">
+
+                    <div class="menu-food-card">
+
+                        <div class="menu-food-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1541014741259-de529411b96a?auto=format&fit=crop&w=700&q=80"
+                                alt="Fresh Garden Salad">
+
+                            <span class="food-badge">
+                                Popular
+                            </span>
+
+                        </div>
+
+                        <div class="menu-food-content">
+
+                            <div class="food-title-price">
+                                <h2>Fresh Garden Salad</h2>
+                                <span class="food-price">₹149</span>
+                            </div>
+
+                            <p>
+                                Fresh vegetables tossed with a delicious
+                                house dressing.
+                            </p>
+
+                            <div class="food-card-bottom">
+
+                                <span class="food-rating">
+                                    <i class="fas fa-star"></i> 4.5
+                                </span>
+
+                                <a href="index.html#contact"
+                                    class="food-order-button">
+                                    Order Now
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- FOOD CARD 2: PIZZA -->
+                <div
+                    class="col-12 col-md-6 col-lg-4 food-item"
+                    data-category="pizza">
+
+                    <div class="menu-food-card">
+
+                        <div class="menu-food-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80"
+                                alt="Classic Cheese Pizza">
+
+                            <span class="food-badge">
+                                Bestseller
+                            </span>
+
+                        </div>
+
+                        <div class="menu-food-content">
+
+                            <div class="food-title-price">
+                                <h2>Classic Cheese Pizza</h2>
+                                <span class="food-price">₹299</span>
+                            </div>
+
+                            <p>
+                                Golden crust topped with cheese and
+                                delicious Italian flavours.
+                            </p>
+
+                            <div class="food-card-bottom">
+
+                                <span class="food-rating">
+                                    <i class="fas fa-star"></i> 4.8
+                                </span>
+
+                                <a href="index.html#contact"
+                                    class="food-order-button">
+                                    Order Now
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- FOOD CARD 3: BURGER -->
+                <div
+                    class="col-12 col-md-6 col-lg-4 food-item"
+                    data-category="burgers">
+
+                    <div class="menu-food-card">
+
+                        <div class="menu-food-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+                                alt="Classic Beef Burger">
+
+                            <span class="food-badge">
+                                Chef's Choice
+                            </span>
+
+                        </div>
+
+                        <div class="menu-food-content">
+
+                            <div class="food-title-price">
+                                <h2>Classic Beef Burger</h2>
+                                <span class="food-price">₹249</span>
+                            </div>
+
+                            <p>
+                                A juicy burger layered with fresh
+                                vegetables and a tasty sauce.
+                            </p>
+
+                            <div class="food-card-bottom">
+
+                                <span class="food-rating">
+                                    <i class="fas fa-star"></i> 4.7
+                                </span>
+
+                                <a href="index.html#contact"
+                                    class="food-order-button">
+                                    Order Now
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- FOOD CARD 4: PIZZA -->
+                <div
+                    class="col-12 col-md-6 col-lg-4 food-item"
+                    data-category="pizza">
+
+                    <div class="menu-food-card">
+
+                        <div class="menu-food-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=700&q=80"
+                                alt="Veggie Supreme Pizza">
+
+                        </div>
+
+                        <div class="menu-food-content">
+
+                            <div class="food-title-price">
+                                <h2>Veggie Supreme Pizza</h2>
+                                <span class="food-price">₹329</span>
+                            </div>
+
+                            <p>
+                                A flavourful pizza loaded with vegetables
+                                and melted cheese.
+                            </p>
+
+                            <div class="food-card-bottom">
+
+                                <span class="food-rating">
+                                    <i class="fas fa-star"></i> 4.6
+                                </span>
+
+                                <a href="index.html#contact"
+                                    class="food-order-button">
+                                    Order Now
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- FOOD CARD 5: BURGER -->
+                <div
+                    class="col-12 col-md-6 col-lg-4 food-item"
+                    data-category="burgers">
+
+                    <div class="menu-food-card">
+
+                        <div class="menu-food-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=80"
+                                alt="Signature Burger">
+
+                        </div>
+
+                        <div class="menu-food-content">
+
+                            <div class="food-title-price">
+                                <h2>Signature Burger</h2>
+                                <span class="food-price">₹279</span>
+                            </div>
+
+                            <p>
+                                A satisfying burger with fresh toppings
+                                and our signature sauce.
+                            </p>
+
+                            <div class="food-card-bottom">
+
+                                <span class="food-rating">
+                                    <i class="fas fa-star"></i> 4.8
+                                </span>
+
+                                <a href="index.html#contact"
+                                    class="food-order-button">
+                                    Order Now
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- FOOD CARD 6: DESSERT -->
+                <div
+                    class="col-12 col-md-6 col-lg-4 food-item"
+                    data-category="desserts">
+
+                    <div class="menu-food-card">
+
+                        <div class="menu-food-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=80"
+                                alt="Chocolate Dessert">
+
+                            <span class="food-badge">
+                                Sweet Treat
+                            </span>
+
+                        </div>
+
+                        <div class="menu-food-content">
+
+                            <div class="food-title-price">
+                                <h2>Chocolate Dessert</h2>
+                                <span class="food-price">₹179</span>
+                            </div>
+
+                            <p>
+                                A delightful sweet treat for the perfect
+                                ending to your meal.
+                            </p>
+
+                            <div class="food-card-bottom">
+
+                                <span class="food-rating">
+                                    <i class="fas fa-star"></i> 4.6
+                                </span>
+
+                                <a href="index.html#contact"
+                                    class="food-order-button">
+                                    Order Now
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="menu-footer">
+        <div class="container text-center">
+
+            <a href="index.html" class="menu-logo">
+                Crave<span>Craft</span>
+            </a>
+
+            <p>
+                Delicious food, memorable moments.
+            </p>
+
+            <p class="copyright-text">
+                &copy; 2026 CraveCraft. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+
+    <!-- CATEGORY FILTER JAVASCRIPT -->
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-button');
+        const foodItems = document.querySelectorAll('.food-item');
+
+        filterButtons.forEach(function (button) {
+
+            button.addEventListener('click', function () {
+
+                const selectedCategory = button.dataset.category;
+
+                filterButtons.forEach(function (item) {
+                    item.classList.remove('active');
+                });
+
+                button.classList.add('active');
+
+                foodItems.forEach(function (food) {
+
+                    const foodCategory = food.dataset.category;
+
+                    if (
+                        selectedCategory === 'all' ||
+                        selectedCategory === foodCategory
+                    ) {
+                        food.style.display = '';
+                    } else {
+                        food.style.display = 'none';
+                    }
+
+                });
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
